@@ -9,4 +9,12 @@
 - th - Az srlg sorbarendezéssel talált threshold az adott hálózatban. Ha a th_mod értéke 1 akkor volt vágás a thresholdnál, ha 0 akkor nem volt (a köztes értékek eredményeit nem töltöttem fel).
 
 **simResult táblák oszlopai**
-- sadas
+- simID - Az adott szimuláció id-ja.
+- start - A node ahonnan indulunk.
+- target - A node ahova el akarunk jutni.
+- len_sht/fugg/djk - A legrövidebb/független/él-duális módszer által talált út hossza.
+- avb_sht/fugg/djk - A független módszer szerinti  availability a legrövidebb/független/él-duális útvonalakra.
+- ed_avb_sht/fugg/djk - Az él-duális féle availability a legrövidebb/független/él-duális útvonalakra.
+- ed_avb_diff - ed_avb_djk - ed_avb_fugg. Ha >0 akkor a független módszer útvonala a jobb. Ha <0 akkor az él-duális módszer útvonala a jobb.
+- pct_zero_djk/fugg/sht - Az adott útvonalban a 0-s edge-k arány az útvonal hosszához.
+- 
